@@ -12,7 +12,6 @@ final class SettingsLivewireServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'settings-livewire');
-        Livewire\Livewire::component('settings-livewire-overview', Liberu\Foundation\SettingsLivewire\Livewire\Overview::class);
+        Livewire::component('settings-livewire-overview', Liberu\Foundation\SettingsLivewire\Livewire\Overview::class);
     }
 }
-
